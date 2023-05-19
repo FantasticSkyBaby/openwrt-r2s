@@ -20,6 +20,7 @@ sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 
+git clone https://github.com/sbwml/luci-app-alist package/alist
 #git clone https://github.com/xiaorouji/openwrt-passwall package/lean/passwall
 #git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/adguardhome
 #git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
