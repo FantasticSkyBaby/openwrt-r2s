@@ -10,23 +10,5 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
-sed -i '$a src-git small https://github.com/kenzok8/small' feeds.conf.default
-#sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall-packages' feeds.conf.default
-
-
-
-
-# Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall_packages https://github.com/Openwrt-Passwall/openwrt-passwall-packages.git;main' >>feeds.conf.default
-#echo 'src-git passwall_luci https://github.com/Openwrt-Passwall/openwrt-passwall2.git;main' >>feeds.conf.default
-
-
-
-#git clone https://github.com/xiaorouji/openwrt-passwall package/lean/passwall
-#git clone https://github.com/rufengsuixing/luci-app-adguardhome.git package/lean/adguardhome
-#git clone https://github.com/destan19/OpenAppFilter.git package/lean/OpenAppFilter
-#git clone https://github.com/jerrykuku/luci-app-argon-config.git package/lean/argonConfig
+# 添加合辑源（二合一，替代 kenzo + small）
+echo 'src-git smpackage https://github.com/kenzok8/small-package' >> feeds.conf.default
